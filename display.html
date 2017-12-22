@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>display</title>
+    <style>
+    .flip, #panel{color:white;
+	             background-color:blue;
+				 padding:10px;
+				 margin:10px;
+				 border:1px solid;}
+				 
+	#panel{display:none;}
+	.abc{float:left;
+	     height:20%;
+		 width:20%;
+		 margin-right:10px;}
+
+    </style>           
+  </head>
+  <body>
+ 	<div class="abc" id="remove">
+        <img src="aaa.jpg" alt="img"><br>
+	    <button onclick="remove()">remove</button>
+	</div>
+     <div class="abc" id="hide">
+	    <img src="aaa.jpg" alt="img"><br>
+	     <button onclick="hide()">hide</button>
+	</div>
+    <div class="abc" id="reset">
+	   <img src="aaa.jpg" alt="img"><br>
+	   <button onclick="reset()">reset</button>
+	</div><br><br><br><br><br><br><br><br><br><br><br>
+	<p class="flip" onclick="myFunction()">click me</p>
+	<div id="panel">
+	Hai how are you??
+	</div>
+	
+	<script>
+		function remove() {
+        document.getElementById("remove").style.display = "none";
+		}
+		function hide() {
+        document.getElementById("hide").style.visibility = "hidden";
+		}
+		function reset() {
+        document.getElementById("hide").style.visibility = "visible";
+		document.getElementById("remove").style.display = "block";
+		}
+		
+		function myFunction() {
+        document.getElementById("panel").style.display = "block";
+		}
+</script>
+  </body>
+</html>

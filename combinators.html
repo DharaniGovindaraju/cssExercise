@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>combinators</title>
+    <style>
+    .desc p {
+    background-color: yellow;
+}
+    .child>p {
+    background-color: yellow;
+}
+    .adjasent+p {
+    background-color: yellow;
+}
+    .general~p {
+    background-color: yellow;
+}
+    </style>           
+  </head>
+  <body>
+   <h3>descendent selectors</h3> 
+    <p>Paragraph 1.</p>
+   <div class="desc">
+		<code>Some code.</code>
+		<p>Paragraph 2.</p>
+    </div>
+	<p>Paragraph 3.</p>
+	<code>Some code.</code>
+	<p>Paragraph 4.</p>
+   <h3>child selectors</h3> 
+    <p>Paragraph 1.</p>
+   <div class="child">
+		<code>Some code.</code>
+		<p>Paragraph 2.</p>
+    </div>
+	<p>Paragraph 3.</p>
+	<code>Some code.</code>
+	<p>Paragraph 4.</p>
+   <h3>Adjacent sibling selectors</h3> 
+    <p>Paragraph 1.</p>
+   <div class="adjasent">
+		<code>Some code.</code>
+		<p>Paragraph 2.</p>
+    </div>
+	<p>Paragraph 3.</p>
+	<code>Some code.</code>
+	<p>Paragraph 4.</p>
+   <h3>general sibling selectors</h3> 
+    <p>Paragraph 1.</p>
+   <div class="general">
+		<code>Some code.</code>
+		<p>Paragraph 2.</p>
+    </div>
+	<p>Paragraph 3.</p>
+	<code>Some code.</code>
+	<p>Paragraph 4.</p>	
+  </body>
+</html>

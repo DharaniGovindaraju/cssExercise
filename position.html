@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>position</title>
+    <style>
+     .static{position:static;}
+	 .relative{position: relative;
+			   width: 400px;
+			   height: 200px;
+			   border: 3px solid #73AD21;}
+	 .absolute{position:absolute;
+			   border:1px solid green;
+			   top: 80px;
+			   right: 0;
+			   width: 200px;
+			   height: 100px;
+	           }
+	 .fixed{position:fixed;
+	        top:80px;
+			border:2px solid red;
+			left:100px;}
+	 .sticky{position: -webkit-sticky; /* Safari */
+			 position: sticky;
+			 top: 0;
+			 background-color: green;
+			 border: 2px solid #4CAF50;
+	         }
+      img{position: absolute;
+          left: 0px;
+          top: 350px;
+		  z-index:-1;}
+	  .image img{position: absolute;
+          left: 0px;
+          top: 600px;
+		  opacity:10;
+		  clip:rect(0px,200px,50px,0px);}
+	 .topleft{position: absolute;
+               top: 608px;
+               left: 16px;
+               font-size: 18px;}
+    </style>           
+  </head>
+  <body>
+	<p class="static">static position default position not affected by left,right,top,bottom</p>
+	<p class="relative">relative position affected by left,right,top,bottom</p>
+	<p class="fixed">fixed position always in same place if page scroll</p>	
+	<p class="absolute">absolute position relative to the nearest position</p><br>
+	<p class="sticky">sticky position based on users scroll position</p><br>
+	<p>Using z-index image behind words avoid overlapping of image and text</p> 
+	<img src="aaa.jpg" alt="image">
+	<br><br><br><br><br><br>
+	<p>to write on image </p>
+	<div class="image">
+	  <img src="aaa.jpg" alt="image">
+	  <div class="topleft">topleft</div>
+	 </div>
+  </body>
+</html>
